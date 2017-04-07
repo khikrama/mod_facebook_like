@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Facebook Like</name>
+    <author>Khandaker Ikrama</author>
+    <version>1.0.0</version>
+    <description>A simple Joomla facebook like module.</description>
+    <files>
+        <filename module="mod_facebook_like">mod_facebook_like.php</filename>
+        <filename>mod_facebook_like.xml</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="fb_app_id"
+                    type="text"
+                    label="Facebook App ID"
+                    description="Enter the Facebook App ID for this addon. Create your App ID by following this url https://developers.facebook.com/apps"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
